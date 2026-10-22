@@ -59,5 +59,5 @@ themes:
 <h2>Funding</h2>
 <ul>
   <li>NSF REU Site: Summer Undergraduate Research Experience (SURE) at Illinois Tech, Award #2548498, 2026–2029 (Co-PI; PI Yuhan Ding)</li>
-  <li>NSF Mathematical Sciences Postdoctoral Research Fellowship, Award #2103239, 2021–2025</li>
+  <li>NSF Mathematical Sciences Postdoctoral Research Fellowship, Award #2103239, 2021–2024</li>
 </ul>

@@ -19,8 +19,8 @@ description: Courses taught by Megan Morrison at Illinois Institute of Technolog
 
 ## Course development
 
-- **MATH 439/539: Network Modeling and Statistics** (Spring 2026). A new cross-listed
-  undergraduate and graduate course.
-- **Ordinary Differential Equations and Data-Driven Methods for Dynamical Systems** (in development).
-  A redesign of MATH 488/515 that adds numerical methods, model selection, reduced-order modeling,
+- **MATH 439/539: Network Modeling and Statistics** (Spring 2026). Designed and first taught
+  this new cross-listed undergraduate and graduate course.
+- **Ordinary Differential Equations and Data-Driven Methods for Dynamical Systems** (designed 2026,
+  not yet offered). A redesign of MATH 488/515 that adds numerical methods, model selection, reduced-order modeling,
   DMD and Koopman analysis, control, and machine learning for dynamical systems.

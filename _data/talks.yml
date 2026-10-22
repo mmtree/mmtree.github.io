@@ -16,11 +16,10 @@
 - date: 2027-01-15
   when: "Jan 12–15, 2027"
   type: invited
-  event: "Joint Mathematics Meetings 2027, Special Session on Identifiability and Indistinguishability in Dynamical Systems"
+  event: "Joint Mathematics Meetings 2027, AMS Special Session on Identifiability and Indistinguishability in Dynamical Systems"
   place: Chicago, IL
   url: https://meetings.ams.org/math/jmm2027/meetingapp.cgi
   title: "Model selection for dynamical systems in the sparse-data, large-library regime"
-  note: "with R. Prasad"
 
 - date: 2026-10
   type: invited
@@ -59,19 +58,9 @@
   event: "SIAM Great Lakes Section Annual Meeting"
   title: "Low-dimensional model of C. elegans premotor network activity"
 
-- date: 2025-05
-  type: invited
-  event: "Chicago Circle Research Day in Math, University of Illinois Chicago"
-  title: "C. elegans neural network dynamics underlying locomotion"
-
 - date: 2025-04
   type: invited
   event: "Stephens Group Seminar, Vrije Universiteit Amsterdam"
-  title: "C. elegans neural network dynamics underlying locomotion"
-
-- date: 2025-04
-  type: contributed
-  event: "Menger Day, Illinois Institute of Technology"
   title: "C. elegans neural network dynamics underlying locomotion"
 
 - date: 2025-03
@@ -109,20 +98,10 @@
   event: "SIAM Conference on Applications of Dynamical Systems"
   title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
 
-- date: 2023-04
-  type: contributed
-  event: "Mostly Biomathematics Seminar, Courant Institute"
-  title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
-
 - date: 2022-07
   type: contributed
   event: "Satellite on Signed Networks and their Applications"
   title: "Transitions between peace and systemic war as bifurcations in a signed network dynamical system"
-
-- date: 2021-10
-  type: contributed
-  event: "Dynamical Systems Seminar, Courant Institute"
-  title: "Nonlinear control in C. elegans"
 
 - date: 2020-07
   type: contributed
