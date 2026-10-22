@@ -1,0 +1,60 @@
+---
+layout: default
+---
+<section class="intro">
+  <img class="portrait" src="{{ '/assets/img/megan.jpg' | relative_url }}" alt="Photo of Megan Morrison" width="600" height="741">
+  <div class="intro-text">
+    <h1>{{ site.author.name }}</h1>
+    <p class="role">
+      {{ site.author.position }}, <a href="{{ site.author.institution_url }}">{{ site.author.department }}</a><br>
+      {{ site.author.institution }}
+    </p>
+    {{ content }}
+    <p class="contact">
+      <span class="label">Email</span> {{ site.author.email_user }} [at] {{ site.author.email_domain | replace: ".", " [dot] " }}
+    </p>
+    {% include links.html %}
+  </div>
+</section>
+
+{% comment %}
+  A talk is upcoming until its date has passed. Dates may be YYYY-MM-DD, or YYYY-MM (kept for the whole month).
+  YAML reads full dates as dates and partial ones as text, so sort on "date|index" strings, soonest first.
+{% endcomment %}
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign this_month = site.time | date: "%Y-%m" %}
+{% assign keys = "" | split: "" %}
+{% for t in site.data.talks %}
+  {% assign d = t.date | append: "" %}
+  {% if d.size > 7 %}{% assign cutoff = today %}{% else %}{% assign cutoff = this_month %}{% endif %}
+  {% if d >= cutoff %}{% assign key = d | append: "|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endif %}
+{% endfor %}
+{% if keys.size > 0 %}
+<section class="news">
+  <h2>Upcoming talks and events</h2>
+  <ul class="news-list">
+    {% assign keys = keys | sort %}
+    {% for key in keys %}
+    {% assign i = key | split: "|" | last | plus: 0 %}
+    {% assign t = site.data.talks[i] %}
+    {% assign d = t.date | append: "" %}
+    <li>
+      <span class="news-date">{% if t.when %}{{ t.when }}{% elsif d.size > 7 %}{{ d | date: "%b %-d, %Y" }}{% else %}{{ d | append: "-01" | date: "%b %Y" }}{% endif %}</span>
+      <span class="news-text"><strong>{{ t.title | replace: "C. elegans", "<em>C.&nbsp;elegans</em>" }}</strong><br>{% if t.url %}<a href="{{ t.url }}">{{ t.event }}</a>{% else %}{{ t.event }}{% endif %}{% if t.place %}, {{ t.place }}{% endif %}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+<section class="news">
+  <h2>News</h2>
+  <ul class="news-list">
+    {% for item in site.data.news %}
+    <li>
+      <span class="news-date">{% assign parts = item.date | append: "" | split: "-" %}{% if parts.size == 2 %}{{ item.date | append: "-01" | date: "%b %Y" }}{% else %}{{ item.date }}{% endif %}</span>
+      <span class="news-text">{{ item.text | markdownify | remove: "<p>" | remove: "</p>" | strip }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>

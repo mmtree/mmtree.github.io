@@ -1,0 +1,165 @@
+:root {
+  --bg: #fdfcfa;
+  --surface: #f3f1ec;
+  --text: #1f2328;
+  --muted: #5b6168;
+  --rule: #e2ded6;
+  --accent: #1f4e8c;
+  --accent-hover: #163a69;
+  --img-bg: #ffffff;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --measure: 46rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15181c;
+    --surface: #1e2227;
+    --text: #e6e7e9;
+    --muted: #a2a8b0;
+    --rule: #2d3239;
+    --accent: #8ab4f0;
+    --accent-hover: #b3cdf6;
+    --img-bg: #f4f4f2;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #15181c;
+  --surface: #1e2227;
+  --text: #e6e7e9;
+  --muted: #a2a8b0;
+  --rule: #2d3239;
+  --accent: #8ab4f0;
+  --accent-hover: #b3cdf6;
+  --img-bg: #f4f4f2;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--accent-hover); }
+
+h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.25; }
+h1 { font-size: 2.1rem; margin: 0 0 .5rem; }
+h2 { font-size: 1.45rem; margin: 2.25rem 0 .75rem; }
+h3 { font-size: 1.1rem; margin: 0 0 .25rem; }
+
+img { max-width: 100%; height: auto; }
+
+.skip { position: absolute; left: -999px; }
+.skip:focus { left: 1rem; top: 1rem; background: var(--bg); padding: .5rem; z-index: 10; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--rule); }
+.header-inner {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: .5rem 1.5rem; padding-top: 1rem; padding-bottom: 1rem;
+}
+.site-name {
+  font-family: var(--serif); font-size: 1.3rem; font-weight: 600;
+  color: var(--text); text-decoration: none;
+}
+.site-nav { display: flex; flex-wrap: wrap; gap: .25rem 1.1rem; }
+.site-nav a { color: var(--muted); text-decoration: none; font-weight: 600; font-size: .98rem; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--accent); }
+.site-nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 6px; }
+
+main.wrap { padding-top: 2.5rem; padding-bottom: 3rem; min-height: 60vh; }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: .92rem; }
+.footer-inner {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+  gap: .5rem 1.5rem; padding-top: 1.25rem; padding-bottom: 1.5rem;
+}
+.site-footer .profile-links { margin: 0; }
+
+/* Profile links */
+.profile-links { list-style: none; padding: 0; margin: 1rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.profile-links a { font-weight: 600; }
+
+/* Home */
+.intro { display: grid; grid-template-columns: 15rem 1fr; gap: 2.5rem; align-items: start; }
+.portrait { width: 100%; border-radius: 6px; display: block; }
+.intro-text p { max-width: var(--measure); }
+.role { color: var(--muted); font-size: 1.1rem; margin-top: 0; }
+.contact .label, .meta { color: var(--muted); }
+.contact .label { font-weight: 600; margin-right: .4rem; }
+
+.news { max-width: var(--measure); }
+.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list li { display: grid; grid-template-columns: 8rem 1fr; gap: 1rem; padding: .55rem 0; border-top: 1px solid var(--rule); }
+.news-list li:last-child { border-bottom: 1px solid var(--rule); }
+.news-date { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+/* Generic page */
+.page { max-width: 52rem; }
+.page p, .page li { max-width: var(--measure); }
+.lede { font-size: 1.15rem; color: var(--muted); }
+.note { color: var(--muted); }
+
+/* Publications */
+.pub { display: grid; grid-template-columns: 9.5rem 1fr; gap: 1.5rem; padding: 1.4rem 0; border-top: 1px solid var(--rule); }
+.pub-thumb {
+  width: 100%; max-height: 11rem; object-fit: contain;
+  background: var(--img-bg); border: 1px solid var(--rule); border-radius: 4px; padding: .35rem;
+}
+.pub-title { font-size: 1.08rem; }
+.pub-title a { color: var(--text); text-decoration: none; }
+.pub-title a:hover { color: var(--accent); text-decoration: underline; }
+.pub p { margin: .2rem 0; }
+.pub-authors, .pub-venue { color: var(--muted); font-size: .97rem; }
+.pub-authors strong { color: var(--text); font-weight: 600; }
+.pub-summary { margin-top: .5rem !important; }
+.pub-links { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin-top: .5rem !important; font-weight: 600; font-size: .95rem; }
+
+/* Research themes */
+.theme-index { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; margin: 1.25rem 0 .5rem; font-weight: 600; }
+.theme { padding-top: .5rem; scroll-margin-top: 1rem; }
+.theme > h2 { margin-top: 2.5rem; }
+.theme-intro p { max-width: var(--measure); }
+.theme-intro { margin-bottom: .75rem; }
+
+/* Group */
+.person { padding: .9rem 0; border-top: 1px solid var(--rule); }
+.person p { margin: .2rem 0; }
+
+/* Teaching */
+.courses { border-collapse: collapse; width: 100%; max-width: 50rem; }
+.courses td { padding: .5rem .75rem .5rem 0; border-top: 1px solid var(--rule); vertical-align: top; }
+.courses tr:last-child td { border-bottom: 1px solid var(--rule); }
+.courses .code { white-space: nowrap; font-weight: 600; width: 9rem; }
+.courses .terms { color: var(--muted); white-space: nowrap; text-align: right; }
+
+/* Phones */
+@media (max-width: 680px) {
+  h1 { font-size: 1.75rem; }
+  main.wrap { padding-top: 1.75rem; }
+  .intro { grid-template-columns: 1fr; gap: 1.25rem; }
+  .portrait { max-width: 12rem; }
+  .pub { grid-template-columns: 1fr; gap: .75rem; }
+  .pub-thumb { max-width: 14rem; }
+  .news-list li { grid-template-columns: 1fr; gap: 0; }
+  .courses td { display: block; border-top: 0; padding: 0; }
+  .courses tr { display: block; border-top: 1px solid var(--rule); padding: .5rem 0; }
+  .courses tr:last-child td { border-bottom: 0; }
+  .courses .terms { text-align: left; }
+}

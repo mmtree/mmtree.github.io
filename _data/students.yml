@@ -1,0 +1,17 @@
+# Current and former students. Move people from current to alumni when they finish.
+
+current:
+  - name: Rahul Prasad
+    level: Ph.D. student, Applied Mathematics
+    since: 2025
+    project: "Data-driven model selection for biological dynamical systems; strategic sampling methods that maximize information for model selection."
+  - name: Manuel Trejo
+    level: Undergraduate researcher
+    since: 2025
+    project: "Vector field conjugacy applied to Koopman eigenfunction transport: mappings between polynomial ODEs with exact rational eigenfunctions."
+
+alumni:
+  - name: Dahee Chung
+    level: M.S. project
+    when: Fall 2025
+    project: "Parameter identification for systems of ordinary differential equations using the SINDy algorithm."

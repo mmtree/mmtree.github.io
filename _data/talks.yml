@@ -1,0 +1,140 @@
+# Talks and events, newest first. date is YYYY-MM-DD, or YYYY-MM if the day isn't known.
+# Entries that haven't happened yet appear under "Upcoming talks and events" on the home page.
+# Past entries are not shown anywhere; they are kept here as a record (they are also on the CV).
+# Optional: when (dates as shown on the site, e.g. a meeting's date range; set date to the last day),
+# url (link to the event page).
+# type: invited, contributed, or event
+
+- date: 2027-06-25
+  when: "Jun 21–25, 2027"
+  type: invited
+  event: "IMSI Workshop: Dimension Reduction for Network-Related Dynamics"
+  place: Chicago, IL
+  url: https://www.imsi.institute/activities/dimension-reduction-for-network-related-dynamics/
+  title: "Community detection and dimensionality reduction for models of C. elegans premotor neural dynamics"
+
+- date: 2027-01-15
+  when: "Jan 12–15, 2027"
+  type: invited
+  event: "Joint Mathematics Meetings 2027, Special Session on Identifiability and Indistinguishability in Dynamical Systems"
+  place: Chicago, IL
+  url: https://meetings.ams.org/math/jmm2027/meetingapp.cgi
+  title: "Model selection for dynamical systems in the sparse-data, large-library regime"
+  note: "with R. Prasad"
+
+- date: 2026-10
+  type: invited
+  event: "HADES Seminar, University of Illinois Urbana-Champaign"
+  title: "Model selection for dynamical systems in the sparse-data, large-library regime"
+
+- date: 2026-07
+  type: invited
+  event: "SIAM Conference on the Life Sciences"
+  note: "Minisymposium: Case Studies in Data-Driven and Data-Informed Modeling of Biological Systems"
+  title: "Reproducing C. elegans premotor neural dynamics with a biology-based network model"
+
+- date: 2026-04
+  type: invited
+  event: "AMS Spring Central Sectional Meeting, Special Session on Mathematics Inspired by Biology"
+  title: "Community detection and dimensionality reduction for models of C. elegans premotor neural dynamics"
+
+- date: 2026-02
+  type: contributed
+  event: "NITMB Work-in-Progress Seminar, National Institute for Theory and Mathematics in Biology"
+  title: "Community detection and dimensionality reduction for models of C. elegans premotor neural dynamics"
+
+- date: 2026-01
+  type: invited
+  event: "Dynamics Days US 2026, University of Arizona"
+  place: Tucson, AZ
+  title: "Reproducing C. elegans premotor neural dynamics with a biology-based network model"
+
+- date: 2025-09
+  type: invited
+  event: "Computational Neuroscience Seminar, Courant Institute, New York University"
+  title: "Reproducing C. elegans premotor neural dynamics with a biology-based network model"
+
+- date: 2025-09
+  type: contributed
+  event: "SIAM Great Lakes Section Annual Meeting"
+  title: "Low-dimensional model of C. elegans premotor network activity"
+
+- date: 2025-05
+  type: invited
+  event: "Chicago Circle Research Day in Math, University of Illinois Chicago"
+  title: "C. elegans neural network dynamics underlying locomotion"
+
+- date: 2025-04
+  type: invited
+  event: "Stephens Group Seminar, Vrije Universiteit Amsterdam"
+  title: "C. elegans neural network dynamics underlying locomotion"
+
+- date: 2025-04
+  type: contributed
+  event: "Menger Day, Illinois Institute of Technology"
+  title: "C. elegans neural network dynamics underlying locomotion"
+
+- date: 2025-03
+  type: invited
+  event: "Mathematical Biology Seminar, University of Illinois Urbana-Champaign"
+  title: "Reproducing C. elegans premotor neural dynamics and decisions with a biophysical network model"
+
+- date: 2025-02
+  type: invited
+  event: "LDS Seminar Series, Purdue University Fort Wayne"
+  title: "Reproducing C. elegans premotor neural dynamics and decisions with a biophysical network model"
+
+- date: 2024-10
+  type: contributed
+  event: "SIAM Great Lakes Section Annual Meeting"
+  title: "A data-driven biophysical network model reproduces C. elegans premotor neural dynamics"
+
+- date: 2024-06
+  type: contributed
+  event: "SIAM Conference on the Life Sciences"
+  title: "Foraging and decision-making in C. elegans: a biophysical and data-driven model"
+
+- date: 2023-06
+  type: invited
+  event: "Bio Dynamics Days, LMAH-Le Havre, Normandie and Courant Institute"
+  title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
+
+- date: 2023-06
+  type: contributed
+  event: "24th International C. elegans Conference"
+  title: "Simulating subnetworks and graph theory"
+
+- date: 2023-05
+  type: contributed
+  event: "SIAM Conference on Applications of Dynamical Systems"
+  title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
+
+- date: 2023-04
+  type: contributed
+  event: "Mostly Biomathematics Seminar, Courant Institute"
+  title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
+
+- date: 2022-07
+  type: contributed
+  event: "Satellite on Signed Networks and their Applications"
+  title: "Transitions between peace and systemic war as bifurcations in a signed network dynamical system"
+
+- date: 2021-10
+  type: contributed
+  event: "Dynamical Systems Seminar, Courant Institute"
+  title: "Nonlinear control in C. elegans"
+
+- date: 2020-07
+  type: contributed
+  event: "SIAM Workshop on Network Science"
+  title: "Structural balance dynamics in insurgent networks"
+
+- date: 2020-06
+  type: contributed
+  event: "SIAM Conference on Mathematics of Data Science"
+  title: "Nonlinear control in C. elegans"
+
+- date: 2019-05
+  type: contributed
+  event: "SIAM Conference on Applications of Dynamical Systems and SIAM Workshop on Network Science"
+  title: "Community detectability and structural balance in signed networks"

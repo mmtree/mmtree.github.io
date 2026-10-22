@@ -1,0 +1,11 @@
+# News items, newest first. Keep this to the 6–8 most recent; older items can be deleted.
+# text is Markdown. Upcoming talks appear on the home page automatically from talks.yml.
+
+- date: 2026-05
+  text: "New preprint with Sonja Petrović: [“Analytical solutions for some quadratic ODEs found via linear rational eigenfunctions and the rational eigenfunction variety”](https://arxiv.org/abs/2605.06950)"
+
+- date: 2026
+  text: "Our NSF REU Site, [SURE at Illinois Tech](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2548498), was funded for 2026–2029 (Co-PI, with PI Yuhan Ding)."
+
+- date: 2025-12
+  text: "New paper with Lai-Sang Young in *PLOS Computational Biology*: [“A data-driven biology-based network model reproduces *C.&nbsp;elegans* premotor neural dynamics”](https://doi.org/10.1371/journal.pcbi.1013818)"

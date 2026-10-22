@@ -1,0 +1,138 @@
+# Publications, newest first.
+# status: "submitted" or "published"
+# Fields: title, authors, venue, details, year, doi, arxiv, code, image, summary
+# theme: which section of the Research page the paper appears in (neural, koopman, datadriven, networks)
+
+- title: "Analytical solutions for some quadratic ODEs found via linear rational eigenfunctions and the rational eigenfunction variety"
+  authors: "M. Morrison and S. Petrović"
+  venue: "Submitted to SIAM Journal on Applied Dynamical Systems"
+  year: 2026
+  status: submitted
+  arxiv: "2605.06950"
+  theme: koopman
+  code: https://github.com/mmtree/linear_rational_eigenfunctions
+  image: rational_eigenfunctions.png
+  summary: >-
+    We find exact, closed-form solutions to families of two-dimensional quadratic ODEs by
+    constructing Koopman eigenfunctions that are rational functions, and describe the algebraic
+    variety of ODEs that admit them.
+
+- title: "A data-driven biology-based network model reproduces C. elegans premotor neural dynamics"
+  authors: "M. Morrison and L.-S. Young"
+  venue: "PLOS Computational Biology"
+  details: "21(12): e1013818"
+  year: 2025
+  status: published
+  doi: "10.1371/journal.pcbi.1013818"
+  arxiv: "2501.00278"
+  theme: neural
+  code: https://github.com/mmtree/Celegans_premotor
+  image: premotor_network.png
+  summary: >-
+    A minimally parameterized, connectome-constrained model of the C. elegans premotor network.
+    Driven by realistic inputs, it reproduces the switching between forward and reversal behavior
+    seen in whole-brain imaging and identifies the neurons that most strongly influence those switches.
+
+- title: "Solving nonlinear ordinary differential equations using the invariant manifolds and Koopman eigenfunctions"
+  authors: "M. Morrison and J. N. Kutz"
+  venue: "SIAM Journal on Applied Dynamical Systems"
+  details: "23(1): 924–960"
+  year: 2024
+  status: published
+  doi: "10.1137/22M1516622"
+  arxiv: "2208.08529"
+  theme: koopman
+  code: https://github.com/mmtree/invariant_manifolds_eigenfunctions
+  image: koopman.png
+  summary: >-
+    We build Koopman eigenfunctions from the invariant manifolds of a nonlinear ODE and use them to
+    write down analytical solutions, including for systems with multiple fixed points.
+
+- title: "Transitions between peace and systemic war as bifurcations in a signed network dynamical system"
+  authors: "M. Morrison, J. N. Kutz, and M. Gabbay"
+  venue: "Network Science"
+  details: "11(3): 458–501"
+  year: 2023
+  status: published
+  doi: "10.1017/nws.2023.10"
+  arxiv: "2203.04451"
+  theme: networks
+  code: https://github.com/mmtree/Transitions_between_peace_and_systemic_war
+  image: peace_war.png
+  summary: >-
+    A signed network model of cooperation and conflict between states shows a sharp bifurcation from
+    peace to systemic war as structural balance pressure grows. We apply it to the European great
+    powers before World War I.
+
+- title: "Chaotic heteroclinic networks as models of switching behavior in biological systems"
+  authors: "M. Morrison and L.-S. Young"
+  venue: "Chaos: An Interdisciplinary Journal of Nonlinear Science"
+  details: "32(12): 123102"
+  year: 2022
+  status: published
+  doi: "10.1063/5.0122184"
+  arxiv: "2208.10654"
+  theme: neural
+  code: https://github.com/mmtree/chaotic_heteroclinic_networks_switching_behavior
+  image: heteroclinic.png
+  summary: >-
+    Deterministic chaotic heteroclinic networks as an alternative to Markov chains for modeling
+    switching between behavioral states. They reproduce dwell times and transition statistics
+    from C. elegans experiments.
+
+- title: "Nonlinear control of networked dynamical systems"
+  authors: "M. Morrison and J. N. Kutz"
+  venue: "IEEE Transactions on Network Science and Engineering"
+  details: "8(1): 174–189"
+  year: 2021
+  status: published
+  doi: "10.1109/TNSE.2020.3032117"
+  arxiv: "2006.05507"
+  theme: datadriven
+  image: network_control.png
+  summary: >-
+    Combines dimensionality reduction, SINDy model discovery, and bifurcation theory to find
+    feed-forward control signals that move high-dimensional networked systems between fixed points.
+
+- title: "Nonlinear control in the nematode C. elegans"
+  authors: "M. Morrison, C. Fieseler, and J. N. Kutz"
+  venue: "Frontiers in Computational Neuroscience"
+  details: "14: 616639"
+  year: 2021
+  status: published
+  doi: "10.3389/fncom.2020.616639"
+  arxiv: "2001.08332"
+  theme: neural
+  code: https://github.com/mmtree/Celegans_nonlinear_control
+  image: celegans_control.png
+  summary: >-
+    A global nonlinear control model, fit to whole-brain calcium imaging, that captures transitions
+    between behavioral states in a single dynamical system.
+
+- title: "Community detectability and structural balance dynamics in signed networks"
+  authors: "M. Morrison and M. Gabbay"
+  venue: "Physical Review E"
+  details: "102(1): 012304"
+  year: 2020
+  status: published
+  doi: "10.1103/PhysRevE.102.012304"
+  arxiv: "1912.07772"
+  theme: networks
+  code: https://github.com/mmtree/Community_signed_networks
+  image: structural_balance.png
+  summary: >-
+    Spectral detectability transitions in signed networks with community structure predict which
+    factions emerge under structural balance dynamics.
+
+- title: "Preventing neurodegenerative memory loss in Hopfield neuronal networks using cerebral organoids or external microelectronics"
+  authors: "M. Morrison, P. Maia, and J. N. Kutz"
+  venue: "Computational and Mathematical Methods in Medicine"
+  details: "2017: 6102494"
+  year: 2017
+  status: published
+  doi: "10.1155/2017/6102494"
+  theme: neural
+  image: hopfield.png
+  summary: >-
+    A computational study of whether an auxiliary network, modeling a brain-machine interface,
+    can restore memory retrieval in a damaged Hopfield network.

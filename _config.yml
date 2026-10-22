@@ -1,0 +1,57 @@
+title: Megan Morrison
+description: >-
+  Megan Morrison, Assistant Professor of Applied Mathematics at Illinois Institute of Technology.
+  Data-driven dynamical systems, Koopman eigenfunctions, and C. elegans neural dynamics.
+url: https://mmtree.github.io
+baseurl: ""
+lang: en
+
+author:
+  name: Megan Morrison
+  position: Assistant Professor
+  department: Department of Applied Mathematics
+  institution: Illinois Institute of Technology
+  institution_url: https://www.iit.edu/applied-math
+  email_user: mmorrison3
+  email_domain: illinoistech.edu
+  office: Illinois Tech, Chicago, IL
+
+links:
+  scholar: https://scholar.google.com/citations?user=eM_Dh3cAAAAJ&hl=en
+  github: https://github.com/mmtree
+  iit: https://www.iit.edu/directory/people/megan-morrison
+  cv: /assets/files/Morrison_CV.pdf
+
+# Top navigation, in order
+nav:
+  - title: Research & Publications
+    url: /research/
+  - title: Group
+    url: /group/
+  - title: Teaching
+    url: /teaching/
+  - title: Resources
+    url: /resources/
+  - title: CV
+    url: /assets/files/Morrison_CV.pdf
+
+plugins:
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - UPDATING.md
+
+defaults:
+  # Colleagues' slides stay linked from the Collaboratorium page but are left out of the sitemap.
+  - scope:
+      path: "assets/files/collaboratorium"
+    values:
+      sitemap: false

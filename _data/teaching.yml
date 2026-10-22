@@ -1,0 +1,34 @@
+# Courses taught, grouped by institution, newest first.
+
+- institution: Illinois Institute of Technology
+  courses:
+    - code: MATH 332
+      name: Elementary Linear Algebra
+      terms: Fall 2026
+    - code: MATH 593
+      name: Seminar in Applied Mathematics and Statistics (organizer)
+      terms: Fall 2026
+    - code: MATH 477 / 577
+      name: Numerical Linear Algebra / Computational Mathematics I
+      terms: Fall 2025, Fall 2026
+    - code: MATH 439 / 539
+      name: Network Modeling and Statistics (new course)
+      terms: Spring 2026
+    - code: MATH 488 / 515
+      name: Ordinary Differential Equations and Dynamic Systems
+      terms: Spring 2025
+    - code: MATH 251
+      name: Multivariate and Vector Calculus
+      terms: Fall 2024
+
+- institution: New York University
+  courses:
+    - code: MATH-UA 262
+      name: Ordinary Differential Equations
+      terms: Spring 2024
+    - code: MATH-UA 140
+      name: Linear Algebra
+      terms: Spring 2023
+    - code: MATH-UA 120
+      name: Discrete Mathematics
+      terms: Fall 2022, Fall 2023
