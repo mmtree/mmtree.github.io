@@ -2,7 +2,7 @@
 # Entries that haven't happened yet appear under "Upcoming talks and events" on the home page.
 # Past entries are not shown anywhere; they are kept here as a record (they are also on the CV).
 # Optional: when (dates as shown on the site, e.g. a meeting's date range; set date to the last day),
-# url (link to the event page).
+# url (link to the event page), done: true (already happened; use when only the month is known).
 # type: invited, contributed, or event
 
 - date: 2027-06-25
@@ -25,6 +25,7 @@
   type: invited
   event: "HADES Seminar, University of Illinois Urbana-Champaign"
   title: "Model selection for dynamical systems in the sparse-data, large-library regime"
+  done: true
 
 - date: 2026-07
   type: invited

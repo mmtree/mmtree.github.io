@@ -18,7 +18,7 @@ layout: default
 </section>
 
 {% comment %}
-  A talk is upcoming until its date has passed. Dates may be YYYY-MM-DD, or YYYY-MM (kept for the whole month).
+  A talk is upcoming until its date has passed, or until it is marked done: true. Dates may be YYYY-MM-DD, or YYYY-MM (kept for the whole month).
   YAML reads full dates as dates and partial ones as text, so sort on "date|index" strings, soonest first.
 {% endcomment %}
 {% assign today = site.time | date: "%Y-%m-%d" %}
@@ -27,7 +27,7 @@ layout: default
 {% for t in site.data.talks %}
   {% assign d = t.date | append: "" %}
   {% if d.size > 7 %}{% assign cutoff = today %}{% else %}{% assign cutoff = this_month %}{% endif %}
-  {% if d >= cutoff %}{% assign key = d | append: "|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endif %}
+  {% if d >= cutoff and t.done != true %}{% assign key = d | append: "|" | append: forloop.index0 %}{% assign keys = keys | push: key %}{% endif %}
 {% endfor %}
 {% if keys.size > 0 %}
 <section class="news">

@@ -28,6 +28,7 @@ links don't break).
 (or `YYYY-MM` if you don't know the day yet). It appears under "Upcoming talks and events" on the
 home page until the date has passed; the site rebuilds daily so this stays current. For an event that isn't a talk (a workshop you're organizing,
 for example), use `type: event` and put the event's name in `title`.
+If a talk dated by month only has already happened, add `done: true` to take it off the home page.
 
 ## Preview on your computer
 
